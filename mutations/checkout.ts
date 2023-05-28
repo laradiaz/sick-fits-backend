@@ -1,5 +1,3 @@
-import { CartItem } from '../schemas/CartItem';
-import { User } from '../schemas/User';
 import { CartItemCreateInput, OrderCreateInput } from '../.keystone/schema-types';
 
 /* eslint-disable */

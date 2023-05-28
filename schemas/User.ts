@@ -7,8 +7,6 @@ export const User = list({
 		create: () => true,
 		read: rules.canManageUsers,
 		update: rules.canManageUsers,
-		// only people with the permission can delete themselves!
-		// You can't delete yourself
 		delete: permissions.canManageUsers,
 	},
 	ui: {
