@@ -43,10 +43,7 @@ export default withAuth(
 	config({
 		// @ts-ignore
 		server: {
-			cors: {
-				origin: '*',
-				credentials: true,
-			},
+			cors: true,
 		},
 		db: {
 			adapter: 'mongoose',
