@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "keystone-next",
-		"build": "keystone-next build",
+		"build": "npm install --production && keystone-next build",
 		"seed-data": "keystone-next --seed-data"
 	},
 	"eslintConfig": {
