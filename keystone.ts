@@ -19,6 +19,7 @@ function check(name: string) {}
 const databaseURL = process.env.DATABASE_URL || 'mongodb://localhost/keystone-sick-fits-tutorial';
 
 const sessionConfig = {
+	domain: 'https://sick-fits-frontend-one.vercel.app',
 	maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
 	secret: process.env.COOKIE_SECRET,
 };
