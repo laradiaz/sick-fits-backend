@@ -14,12 +14,10 @@ import { insertSeedData } from './seed-data';
 import { sendPasswordResetEmail } from './lib/mail';
 import { extendGraphqlSchema } from './mutations';
 
-function check(name: string) {}
-
 const databaseURL = process.env.DATABASE_URL || 'mongodb://localhost/keystone-sick-fits-tutorial';
 
 const sessionConfig = {
-	domain: 'onrender.com',
+	domain: '*.onrender.com',
 	secure: false,
 	maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
 	secret: process.env.COOKIE_SECRET,
